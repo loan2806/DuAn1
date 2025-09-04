@@ -39,6 +39,9 @@
 | Category_name | VARCHAR      | Tên danh mục |
 | Describe      | TEXT         | Mô tả |
 | Created_at    | DATETIME     | Ngày tạo |
+| Update_by       | INT          | Người cập nhật |
+| Update_at       | DATETIME     | Thời gian cập nhật |
+
 
 ---
 
@@ -51,6 +54,9 @@
 | Product_img   | VARCHAR      | Ảnh đại diện |
 | Created_at    | DATETIME     | Ngày tạo |
 | <span style="color:blue">Category_id</span>   | FK           | Tham chiếu `Categories` |
+| Update_by       | INT          | Người cập nhật |
+| Update_at       | DATETIME     | Thời gian cập nhật |
+
 
 ---
 
@@ -62,6 +68,8 @@
 | Size       | VARCHAR      | Kích thước |
 | Price      | DECIMAL      | Giá |
 | Quantity   | INT          | Số lượng |
+| Update_by       | INT          | Người cập nhật |
+
 
 ---
 
@@ -71,6 +79,8 @@
 | <span style="color:red">Image_id</span>   | PK           | ID ảnh |
 | <span style="color:blue">Product_id</span> | FK           | Sản phẩm |
 | Image_main | VARCHAR      | Link ảnh |
+| Update_by       | INT          | Người cập nhật |
+
 
 ---
 
@@ -88,6 +98,8 @@
 | <span style="color:red">Id</span>         | PK           | ID chi tiết giỏ |
 | <span style="color:blue">Cart_id</span>    | FK           | Giỏ hàng |
 | <span style="color:blue">Product_id</span> | FK           | Sản phẩm |
+| Update_at       | DATETIME     | Thời gian cập nhật |
+
 
 ---
 
