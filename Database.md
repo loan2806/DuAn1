@@ -18,7 +18,7 @@
 | Trường   | Kiểu dữ liệu | Mô tả |
 |----------|--------------|-------|
 | <span style="color:red">Role_id</span>  | PK           | ID phân quyền |
-| <span style="color:blue">User_id</span>  | FK           | Tham chiếu `User` |
+| <span style="color:blue">Role_name</span>  | FK           |  |
 
 ---
 
